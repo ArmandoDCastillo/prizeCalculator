@@ -90,7 +90,7 @@ for (int q = 0; q < numberofStudents; q++)
   cout << students[q].studentName << ": " << students[q].totalEntries << endl;
 }
 
-cout << "hello" << endl;
+cout << "Last line of main" << endl;
 
 
 
