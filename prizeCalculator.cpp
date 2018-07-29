@@ -41,14 +41,11 @@ for (int i = 0; i < numberofStudents; i++)
   cout << students[i].studentName << endl;
 }
 
-// Loop to fill contents of each studentWorker array.
+// Loop to fill contents of each studentWorker structure array.
 
 for (int s = 0; s < numberofStudents; s++)
 {
   cout << "Data for " << students[s].studentName << "." << endl;
-
-  for (int x = 0; x < 1; x++)
-  {
 
     cout << "How many MCS calls did " << students[s].studentName << " take?"
          << endl;
@@ -65,14 +62,26 @@ for (int s = 0; s < numberofStudents; s++)
     cin >> students[s].NOCcallsTaken;
     cout << endl;
 
-  }
+    cout << "How many bomgars did " << students[s].studentName << " take?"
+         << endl;
+    cin >> students[s].bomgar;
+    cout << endl;
+
+    cout << "How many attendance entries does " << students[s].studentName <<
+            " get? " << endl;
+    cin >> students[s].attendance;
+    cout << endl;
+
+    students[s].totalEntries = students[s].MCScallsTaken +
+                               students[s].NOCcallsTaken +
+                               students[s].bomgar +
+                               students[s].attendance +
+                               students[s].emailsResolved * 2;
+
+    cout << "The student: " << students[s].studentName << " gets " <<
+         students[s].totalEntries << " total entries. " << endl << endl;
+
 }
-
-
-
-
-
-
 
 cout << "hello" << endl;
 
