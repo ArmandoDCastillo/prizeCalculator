@@ -45,7 +45,7 @@ for (int i = 0; i < numberofStudents; i++)
 
 for (int s = 0; s < numberofStudents; s++)
 {
-  cout << "Data for " << students[s].studentName << "." << endl;
+    cout << "Data for " << students[s].studentName << "." << endl;
 
     cout << "How many MCS calls did " << students[s].studentName << " take?"
          << endl;
@@ -81,6 +81,13 @@ for (int s = 0; s < numberofStudents; s++)
     cout << "The student: " << students[s].studentName << " gets " <<
          students[s].totalEntries << " total entries. " << endl << endl;
 
+}
+
+// Display all students and the amount of entries they have accumulated.
+
+for (int q = 0; q < numberofStudents; q++)
+{
+  cout << students[q].studentName << ": " << students[q].totalEntries << endl;
 }
 
 cout << "hello" << endl;
