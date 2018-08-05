@@ -72,8 +72,8 @@ for (int s = 0; s < numberofStudents; s++)
     cin >> students[s].attendance;
     cout << endl;
 
-    students[s].totalEntries = students[s].MCScallsTaken +
-                               students[s].NOCcallsTaken +
+    students[s].totalEntries = students[s].MCScallsTaken / 5 +
+                               students[s].NOCcallsTaken / 2 +
                                students[s].bomgar +
                                students[s].attendance +
                                students[s].emailsResolved * 2;
