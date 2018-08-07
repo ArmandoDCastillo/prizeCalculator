@@ -51,26 +51,34 @@ for (int s = 0; s < numberofStudents; s++)
          << endl;
     cin >> students[s].MCScallsTaken;
     cout << endl;
+    cout << "Entries: " << students[s].MCScallsTaken / 5;
+    cout << endl;
 
     cout << "How many emails did " << students[s].studentName << " resolve?" <<
     endl;
     cin >> students[s].emailsResolved;
+    cout << endl;
+    cout << "Entries: " << students[s].emailsResolved * 2;
     cout << endl;
 
     cout << "How many NOC calls did " << students[s].studentName << " take?"
          << endl;
     cin >> students[s].NOCcallsTaken;
     cout << endl;
+    cout << "Entries: " << students[s].NOCcallsTaken / 2 << endl;
+
 
     cout << "How many bomgars did " << students[s].studentName << " take?"
          << endl;
     cin >> students[s].bomgar;
     cout << endl;
+    cout << "Entries: " << students[s].bomgar << endl;
 
     cout << "How many attendance entries does " << students[s].studentName <<
             " get? " << endl;
     cin >> students[s].attendance;
     cout << endl;
+    cout << "Entries: " << students[s].attendance << endl;
 
     students[s].totalEntries = students[s].MCScallsTaken / 5 +
                                students[s].NOCcallsTaken / 2 +
